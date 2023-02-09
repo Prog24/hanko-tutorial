@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@next/font': 13.1.6
+  '@teamhanko/hanko-elements': 0.1.1-alpha
   '@types/node': 18.13.0
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   '@next/font': 13.1.6
+  '@teamhanko/hanko-elements': 0.1.1-alpha
   '@types/node': 18.13.0
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -31,6 +33,14 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@denysvuika/preact-translate/0.4.1_preact@10.12.0:
+    resolution: {integrity: sha512-JCgTwPd6iq0nD6betffGYT4C2mj+PYLjEPuDcMRny4Nsh4E2W7UHWD8/jHnUyGiDnt0nezqAzP0s/AB+6XMVJg==}
+    peerDependencies:
+      preact: '>=10.0.0'
+    dependencies:
+      preact: 10.12.0
     dev: false
 
   /@eslint/eslintrc/1.4.1:
@@ -242,6 +252,25 @@ packages:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.5.0
+    dev: false
+
+  /@teamhanko/hanko-elements/0.1.1-alpha:
+    resolution: {integrity: sha512-OekwBTThs4z7vA+0GfAPobW9B3CEKx8h9QCbdr2KPQ+CO9XZ6z5MugMd/tUBtb+fRMbOrgxZQvp+J14ZvMscZw==}
+    dependencies:
+      '@denysvuika/preact-translate': 0.4.1_preact@10.12.0
+      '@teamhanko/preact-custom-element': 4.2.2_preact@10.12.0
+      classnames: 2.3.2
+      preact: 10.12.0
+    dev: false
+    bundledDependencies:
+      - '@teamhanko/hanko-frontend-sdk'
+
+  /@teamhanko/preact-custom-element/4.2.2_preact@10.12.0:
+    resolution: {integrity: sha512-3djCQr25IxQIgpidxD8J0fTQ7/hMuoa5Nmv7delQc6sX4kXgv9e/pE01cywpmGZLi69H1KUH4dmZ4cPPJQrsQQ==}
+    peerDependencies:
+      preact: 10.x
+    dependencies:
+      preact: 10.12.0
     dev: false
 
   /@types/json5/0.0.29:
@@ -487,6 +516,10 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: false
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
     dev: false
 
   /client-only/0.0.1:
@@ -1757,6 +1790,10 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /preact/10.12.0:
+    resolution: {integrity: sha512-+w8ix+huD8CNZemheC53IPjMUFk921i02o30u0K6h53spMX41y/QhVDnG/nU2k42/69tvqWmVsgNLIiwRAcmxg==}
     dev: false
 
   /prelude-ls/1.2.1:
